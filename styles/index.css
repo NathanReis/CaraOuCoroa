@@ -1,0 +1,116 @@
+main {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+#img-block {
+    height: 10rem;
+    width: 10rem;
+}
+
+#img-block svg {
+    position: relative;
+
+    fill: var(--color-icons);
+}
+
+#img-block svg * {
+    fill: inherit;
+}
+
+#icon-crown,
+#icon-face {
+    display: none;
+}
+
+#btn-block {
+    margin-top: 5rem;
+}
+
+#btn-block button {
+    border: none;
+    background-color: transparent;
+
+    color: var(--color-icons);
+
+    font-size: 1.5rem;
+
+    padding: 0.5rem;
+
+    border-radius: 1.25rem;
+
+    cursor: pointer;
+
+    width: 10rem;
+}
+
+#btn-block button:focus {
+    outline: none;
+}
+
+#btn-block button:hover {
+    background-color: #505050;
+
+    transition: background-color 0.75s;
+}
+
+.throwCoin {
+    animation-name: throwCoin;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes throwCoin {
+    0% {
+        top: 0;
+        transform: rotateX(0deg);
+    }
+
+    10% {
+        transform: rotateX(360deg);
+    }
+
+    20% {
+        transform: rotateX(0deg);
+    }
+
+    30% {
+        transform: rotateX(360deg);
+    }
+
+    40% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        top: -50vh;
+        transform: rotateX(360deg);
+    }
+
+    60% {
+        transform: rotateX(0deg);
+    }
+
+    70% {
+        transform: rotateX(360deg);
+    }
+
+    80% {
+        transform: rotateX(0deg);
+    }
+
+    90% {
+        transform: rotateX(360deg);
+    }
+
+    100% {
+        top: 0;
+        transform: rotateX(0deg);
+    }
+}
