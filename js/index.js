@@ -60,9 +60,9 @@ function showResult(dimensionButton, coordinatesClick) {
     let limitPercent = 4; // Valor de 50% para cara e coroa
 
     if (percentClick >= 25 && percentClick <= 44) {
-        limitPercent = 2; // Valor de 80% para cara
+        limitPercent = 1; // Valor de 80% para cara
     } else if (percentClick >= 56 && percentClick <= 75) {
-        limitPercent = 8; // Valor de 80% para coroa
+        limitPercent = 7; // Valor de 80% para coroa
     }
 
     let drawNumber = Math.floor(Math.random() * 10);
